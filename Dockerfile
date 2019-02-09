@@ -11,7 +11,7 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir /opt/screenconnect-installer
 
 # Setup
-ADD "https://www.screenconnect.com/Download?Action=DownloadLatest&Platform=Linux&PreRelease=false" /opt/screenconnect-installer/ScreenConnect_Release.tar.gz
+ADD "https://d1kuyuqowve5id.cloudfront.net/ScreenConnect_5.3.9074.5646_Release.tar.gz" /opt/screenconnect-installer/ScreenConnect_Release.tar.gz
 WORKDIR /opt/screenconnect-installer/
 RUN tar xvf ScreenConnect_Release.tar.gz
 RUN echo -e "\n\n" | ScreenConnect_*_Install/install.sh
